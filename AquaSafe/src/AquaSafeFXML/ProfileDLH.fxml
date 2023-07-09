@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #97A9B9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaSafeFXML.ControllerProfileDLH">
+   <children>
+      <Pane layoutX="36.0" layoutY="36.0" prefHeight="667.0" prefWidth="1128.0" style="-fx-background-color: #DEEFFF; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow height="65.0" radius="40.75" width="100.0">
+               <color>
+                  <Color red="0.1535358428955078" green="0.30922406911849976" blue="0.4649122953414917" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <ImageView fitHeight="148.0" fitWidth="1106.0" layoutX="12.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Gambar/profile%20begron.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a8c4de" height="138.0" layoutX="11.0" layoutY="12.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" width="1106.0">
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Rectangle>
+            <ImageView fitHeight="133.0" fitWidth="129.0" layoutX="186.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Gambar/profile%201.png" />
+               </image>
+               <effect>
+                  <DropShadow height="34.62" radius="17.785" width="38.52">
+                     <color>
+                        <Color red="0.148499995470047" green="0.24042671918869019" blue="0.33000001311302185" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Button layoutX="496.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: #DEEFFF;" text="Edit" textFill="#35678b" underline="true" />
+            <Text layoutX="107.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Lengkap">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="496.0" layoutY="352.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: #DEEFFF;" text="Edit" textFill="#35678b" underline="true" />
+            <Text layoutX="108.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kartu Anggota">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="117.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Lahir">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="647.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="623.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="496.0" layoutY="433.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: #DEEFFF;" text="Edit" textFill="#35678b" underline="true" />
+            <Button layoutX="972.0" layoutY="274.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: #DEEFFF;" text="Edit" textFill="#35678b" underline="true" />
+            <Button layoutX="972.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="38.0" style="-fx-background-color: #DEEFFF;" text="Edit" textFill="#35678b" underline="true" />
+            <TextField layoutX="224.0" layoutY="268.0" prefHeight="37.0" prefWidth="274.0" promptText="Nama Lengkap" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+            <TextField layoutX="224.0" layoutY="346.0" prefHeight="37.0" prefWidth="274.0" promptText="Email" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+            <TextField layoutX="224.0" layoutY="427.0" prefHeight="37.0" prefWidth="274.0" promptText="Tanggal Lahir" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+            <TextField layoutX="700.0" layoutY="268.0" prefHeight="37.0" prefWidth="274.0" promptText="Email" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+            <TextField layoutX="700.0" layoutY="346.0" prefHeight="37.0" prefWidth="274.0" promptText="Password" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="904.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Gambar/profile%20text%202.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="800.0" layoutY="412.0" prefHeight="36.0" prefWidth="172.0" style="-fx-background-color: #a8c4de; -fx-background-radius: 20;" text="Simpan">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="butToKembali" layoutX="800.0" layoutY="461.0" onAction="#ToKembali" prefHeight="36.0" prefWidth="172.0" style="-fx-background-color: #a8c4de; -fx-background-radius: 20;" text="Kembali">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

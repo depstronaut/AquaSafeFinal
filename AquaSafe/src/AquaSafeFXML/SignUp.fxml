@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: #deeeff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaSafeFXML.ControllerSignUp">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="637.0" layoutX="141.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/rectangle%20rounded.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="752.0" fitWidth="414.0" layoutX="-1.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/begron%20signup.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tFfullName" layoutX="386.0" layoutY="261.0" prefHeight="37.0" prefWidth="274.0" promptText="Nama Lengkap" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+      <TextField fx:id="tFkartuAnggota" layoutX="386.0" layoutY="346.0" prefHeight="37.0" prefWidth="274.0" promptText="Kartu Anggota" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+      <TextField fx:id="tFtglLahir" layoutX="386.0" layoutY="435.0" prefHeight="37.0" prefWidth="274.0" promptText="Tanggal Lahir" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+      <TextField fx:id="tFemail" layoutX="704.0" layoutY="261.0" prefHeight="37.0" prefWidth="274.0" promptText="Email" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+      <TextField fx:id="tFpassword" layoutX="704.0" layoutY="346.0" prefHeight="37.0" prefWidth="274.0" promptText="Password" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+      <TextField fx:id="tfPasswordConfirm" layoutX="704.0" layoutY="435.0" prefHeight="37.0" prefWidth="274.0" promptText="Konfirmasi Password" style="-fx-background-color: #deeeff; -fx-border-color: black; -fx-border-radius: 8;" />
+      <ImageView fitHeight="519.0" fitWidth="205.0" layoutX="1004.0" layoutY="226.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/sign%20up%20begron%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="752.0" fitWidth="353.0" layoutX="-1.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Gambar/begron%20signup.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="259.0" fitWidth="260.0" layoutX="12.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/aquasafe%20logo%202.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="204.0" fitWidth="205.0" layoutX="40.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/aquasafe%20logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="250.0" layoutX="272.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/daftar%20akun.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="241.0" fitWidth="234.0" layoutX="869.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/signup%20begron.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="386.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Lengkap">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="386.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kartu Anggota">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="386.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Lahir">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="704.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="708.0" layoutY="337.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="705.0" layoutY="428.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Konfirmasi Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="493.0" layoutY="557.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="butRegister" layoutX="398.0" layoutY="511.0" onAction="#register" prefHeight="36.0" prefWidth="250.0" style="-fx-background-color: #a8c4de; -fx-background-radius: 20;" text="Simpan">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="butToKembali" layoutX="397.0" layoutY="561.0" onAction="#ToKembali" prefHeight="36.0" prefWidth="250.0" style="-fx-background-color: #a8c4de; -fx-background-radius: 20;" text="Kembali">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="butToLogin" layoutX="545.0" layoutY="611.0" mnemonicParsing="false" onAction="#ToLogin" prefHeight="26.0" prefWidth="56.0" style="-fx-background-color: #deeeff;" text="Login" textFill="#143b5c" underline="true" />
+      <Text layoutX="451.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sudah punya akun?" />
+   </children>
+</AnchorPane>

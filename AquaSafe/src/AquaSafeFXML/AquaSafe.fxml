@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaSafeFXML.ControllerAquasafe">
+   <children>
+      <ImageView fitHeight="818.0" fitWidth="1355.0" layoutX="-21.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/river-flowing-through-trees-mountains-scotland.jpg" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="180.0" layoutY="75.0" radius="482.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <DropShadow height="80.36" radius="41.870000000000005" width="89.12">
+               <color>
+                  <Color red="0.16471734642982483" green="0.28001949191093445" blue="0.34210526943206787" />
+               </color>
+            </DropShadow>
+         </effect></Circle>
+      <Circle fill="#f1fdff" layoutX="14.0" layoutY="517.0" radius="227.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <DropShadow height="104.7" radius="50.875" width="100.8">
+               <color>
+                  <Color red="0.03500000014901161" green="0.19249999523162842" blue="0.3499999940395355" opacity="0.49492383003234863" />
+               </color>
+            </DropShadow>
+         </effect></Circle>
+      <ImageView fitHeight="162.0" fitWidth="223.0" layoutX="190.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/tulisan2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="162.0" fitWidth="230.0" layoutX="178.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/tulisan1.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#ebfbff" layoutX="511.0" layoutY="68.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Text layoutX="704.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Halaman Utama" wrappingWidth="145.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="862.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tentang Kami" wrappingWidth="129.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="1010.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kontak Kami" wrappingWidth="121.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="89.0" fitWidth="91.0" layoutX="57.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/aquasafe%20logo.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#dbf4fb" layoutX="101.0" layoutY="310.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#f2fdff" layoutX="560.0" layoutY="58.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#f2fdff" layoutX="223.0" layoutY="388.0" radius="32.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ImageView fitHeight="220.0" fitWidth="436.0" layoutX="739.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Gambar/tulisan33.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="butTamu" layoutX="560.0" layoutY="607.0" mnemonicParsing="false" onAction="#tamu" prefHeight="48.0" prefWidth="190.0" style="-fx-background-color: #EFF1F2; -fx-background-radius: 20;" text="Sebagai Tamu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="butDaftar" layoutX="976.0" layoutY="607.0" mnemonicParsing="false" onAction="#daftar" prefHeight="48.0" prefWidth="190.0" style="-fx-background-color: #EFF1F2; -fx-background-radius: 20;" text="Daftar">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="butLogin" layoutX="767.0" layoutY="607.0" mnemonicParsing="false" onAction="#login" prefHeight="48.0" prefWidth="190.0" style="-fx-background-color: #EFF1F2; -fx-background-radius: 20;" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
