@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="740.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AquaSafeFXML.ControllerHome">
+   <children>
+      <Pane layoutX="211.0" layoutY="-2.0" prefHeight="743.0" prefWidth="989.0" style="-fx-background-color: #A8C4DE;">
+         <children>
+            <ImageView fitHeight="866.0" fitWidth="1163.0" layoutX="-162.0" layoutY="-21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Gambar/lake-summer-sunny-day.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="64.0" layoutY="292.0" prefHeight="272.0" prefWidth="909.0" style="-fx-background-color: #EFF1F2; -fx-background-radius: 20;">
+               <children>
+                  <BarChart fx:id="barChart" animated="false" categoryGap="4.0" layoutX="16.0" layoutY="15.0" prefHeight="242.0" prefWidth="873.0" style="-fx-bar-gap: 2;" title="Status Mutu Kualitas Sungai Indonesia(2021)">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </BarChart>
+                  <Text layoutX="374.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sumber: Badan Pusat Statistik" />
+               </children>
+            </Pane>
+            <Pane layoutX="64.0" layoutY="579.0" prefHeight="131.0" prefWidth="604.0" style="-fx-background-color: #EFF1F2; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="107.0" fitWidth="633.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Gambar/tabel%20penilaian%20v2.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="butTopH" layoutX="163.0" layoutY="36.0" mnemonicParsing="false" onAction="#topH" style="-fx-background-color: transparent;" text="pH(mg/L)">
+                     <font>
+                        <Font name="Franklin Gothic Medium Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="butToDO" layoutX="247.0" layoutY="37.0" mnemonicParsing="false" onAction="#toDO" style="-fx-background-color: transparent;" text="DO(mg/L)">
+                     <font>
+                        <Font name="Franklin Gothic Medium Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="butToBOD" layoutX="331.0" layoutY="37.0" mnemonicParsing="false" onAction="#toBOD" style="-fx-background-color: transparent;" text="BOD(mg/L)">
+                     <font>
+                        <Font name="Franklin Gothic Medium Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="butToCOD" layoutX="417.0" layoutY="37.0" mnemonicParsing="false" onAction="#toCOD" style="-fx-background-color: transparent;" text="COD(mg/L)">
+                     <font>
+                        <Font name="Franklin Gothic Medium Italic" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="butToTSS" layoutX="507.0" layoutY="37.0" mnemonicParsing="false" onAction="#toTSS" style="-fx-background-color: transparent;" text="TSS(mg/L)">
+                     <font>
+                        <Font name="Franklin Gothic Medium Italic" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="690.0" layoutY="579.0" prefHeight="131.0" prefWidth="131.0" style="-fx-background-color: #EFF1F2; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="81.0" fitWidth="118.0" layoutX="7.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Gambar/tindakan.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="21.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tindakan untuk mencegah pencemaran air sungai" textAlignment="CENTER" wrappingWidth="90.83805847167969" />
+                  <Button fx:id="butEdukasi1" ellipsisString="" layoutX="4.0" layoutY="-1.0" mnemonicParsing="false" onAction="#toEdukasi1" prefHeight="131.0" prefWidth="125.0" style="-fx-background-color: transparent;" />
+               </children></Pane>
+            <Pane layoutX="844.0" layoutY="579.0" prefHeight="131.0" prefWidth="131.0" style="-fx-background-color: #EFF1F2; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="73.0" layoutX="29.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Gambar/dampak%20negatif.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="20.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dampak dan penyebab pencemaran air" textAlignment="CENTER" wrappingWidth="90.83805847167969" />
+                  <Button fx:id="butEdukasi2" ellipsisString="" layoutX="2.0" mnemonicParsing="false" onAction="#toEdukasi2" prefHeight="131.0" prefWidth="125.0" style="-fx-background-color: transparent;" />
+               </children></Pane>
+            <Pane layoutX="64.0" layoutY="33.0" prefHeight="242.0" prefWidth="909.0" style="-fx-background-color: transparent; -fx-background-radius: 20;">
+               <children>
+                  <ImageView fitHeight="304.0" fitWidth="909.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Gambar/transparent%20begron%202.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="14.0" layoutY="48.0" prefHeight="181.0" prefWidth="131.0" style="-fx-background-color: #DEEFFF; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="89.0" fitWidth="107.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Gambar/20220923212235.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="12.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atasi Pencemaran Air, DLH Pantau Empat Sungai di Kota Yogya" textAlignment="CENTER" wrappingWidth="107.0" />
+                        <Button fx:id="butToBerita1" ellipsisString="" mnemonicParsing="false" onAction="#toBerita1" prefHeight="174.0" prefWidth="125.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="165.0" layoutY="48.0" prefHeight="181.0" prefWidth="131.0" style="-fx-background-color: #DEEFFF; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="89.0" fitWidth="107.0" layoutX="12.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Gambar/075368600-1683195738-830-556.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="7.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DLH Sebut Solusi Atasi Pencemaran Air Sumur dan Sungai di Yogyakarta" textAlignment="CENTER" wrappingWidth="117.6666259765625" />
+                        <Button fx:id="butToBerita2" ellipsisString="" layoutX="3.0" layoutY="3.0" mnemonicParsing="false" onAction="#toBerita2" prefHeight="174.0" prefWidth="125.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="313.0" layoutY="48.0" prefHeight="181.0" prefWidth="131.0" style="-fx-background-color: #DEEFFF; -fx-background-radius: 20;">
+                     <children>
+                        <ImageView fitHeight="89.0" fitWidth="107.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Gambar/25-memo-sungai.jpg" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="10.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DLH Nilai Semua Sungai Di Jogja Tercemar, Ini Jenis Pencemarannya" textAlignment="CENTER" wrappingWidth="117.6666259765625" />
+                        <Button fx:id="butToBerita3" ellipsisString="" layoutX="6.0" layoutY="5.0" mnemonicParsing="false" onAction="#toBerita3" prefHeight="174.0" prefWidth="125.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="463.0" layoutY="48.0" prefHeight="181.0" prefWidth="131.0" style="-fx-background-color: #DEEFFF; -fx-background-radius: 20;">
+                     <children>
+                        <Text layoutX="3.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ini Sungai di Jogja yang Tercemar Paling Parah, Airnya Mengandung Zat Berbahaya" textAlignment="CENTER" wrappingWidth="125.0" />
+                        <ImageView fitHeight="81.0" fitWidth="107.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Gambar/34490%20%5BConverted%5D.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="butToBerita4" ellipsisString="" layoutX="3.0" layoutY="4.0" mnemonicParsing="false" onAction="#toBerita4" prefHeight="174.0" prefWidth="125.0" style="-fx-background-color: transparent;" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="614.0" layoutY="48.0" prefHeight="181.0" prefWidth="131.0" style="-fx-background-color: #DEEFFF; -fx-background-radius: 20;" />
+                  <Pane layoutX="764.0" layoutY="48.0" prefHeight="181.0" prefWidth="131.0" style="-fx-background-color: #DEEFFF; -fx-background-radius: 20;" />
+                  <ImageView fitHeight="12.0" fitWidth="91.0" layoutX="34.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Gambar/portal%20berita.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane prefHeight="741.0" prefWidth="241.0" style="-fx-background-color: #DEEFFF;">
+         <children>
+            <ImageView fitHeight="41.0" fitWidth="154.0" layoutX="42.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Gambar/aquasafe%20logo%203.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="butDashboard" layoutX="21.0" layoutY="165.0" mnemonicParsing="false" onAction="#dashboard" prefHeight="37.0" prefWidth="196.0" style="-fx-background-color: #E8F4FF; -fx-background-radius: 15;" text="     Dashboard">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="45.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Gambar/dashboard.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="butHasilPengamatan" layoutX="23.0" layoutY="218.0" mnemonicParsing="false" onAction="#hasilpengamatan" prefHeight="37.0" prefWidth="196.0" style="-fx-background-color: #E8F4FF; -fx-background-radius: 15;" text="                Hasil pengamatan">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="46.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Gambar/list.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="25.0" layoutX="19.0" layoutY="699.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Gambar/logout.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="butKeluar" layoutX="12.0" layoutY="688.0" mnemonicParsing="false" onAction="#keluar" prefHeight="44.0" prefWidth="34.0" style="-fx-background-color: transparent;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
